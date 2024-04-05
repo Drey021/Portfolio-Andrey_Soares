@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./src/imagens/icone2.png" type="image/x-icon">
+  <title>Andrey Santana Soares - Desenvolvedor Web</title>
+
+  <link rel="stylesheet" href="src/css/font-awesome.css" />
+  <link rel="stylesheet" href="src/css/reset.css" />
+
+  <!-- Global -->
+  <link rel="stylesheet" href="src/css/globais.css" />
+  <link rel="stylesheet" href="src/css/variaveis.css" />
+  <link rel="stylesheet" href="src/css/secoes/header.css" />
+  <link rel="stylesheet" href="src/css/secoes/home.css" />
+  <link rel="stylesheet" href="src/css/secoes/sobre.css" />
+  <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
+  <link rel="stylesheet" href="src/css/secoes/projetos.css" />
+  <link rel="stylesheet" href="src/css/secoes/footer.css" />
+  <link rel="stylesheet" href="src/css/scrollbar.css">
+
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between alinhar-itens-no-centro">
+        <a href="#">
+          <h1 class="logo">ASS</h1>
+        </a>
+        <nav>
+          <input id="menu-hamburguer" type="checkbox" />
+
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+          <ul>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Meus projetos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="container">
+      <div class="row full-screen alinhar-itens-no-centro">
+        <div class="texto-home" data-anime="left">
+          <p>Olá 👋,</p>
+          <h1>Sou o <span>Andrey Soares</span></h1>
+          <h2>Desenvolvedor Web</h2>
+
+          <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/andreyssoares/" target="_blank" class="outer-shadow"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5518996260227" target="_blank" class="outer-shadow"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/Drey021" target="_blank" class="outer-shadow"><i
+                class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/drey_soares_/" target="_blank" class="outer-shadow"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="img-home" data-anime="right">
+          <div class="img-box inner-shadow">
+            <img class="outer-shadow" src="src/imagens/foto-perfil.png" alt="foto de perfil do Andrey" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sobre-mim section" id="sobre-mim">
+    <div class="container">
+      <div class="row">
+        <div class="section-title" data-anime="down">
+          <h2>Sobre mim</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="imagem-sobre-mim" data-anime="left">
+          <div class="img-box inner-shadow">
+            <img src="src/imagens/foto-perfil.png" alt="foto sobre mim" class="outer-shadow" />
+          </div>
+        </div>
+        <div class="informacoes-sobre-mim" data-anime="up">
+          <p>
+            <strong>Olá! Meu nome é <span>Andrey Soares</span> e sou um desenvolvedor web!</strong> Sou uma pessoa responsável, organizada e focada, sempre em 
+            busca de crescimento na área de tecnologia, pois estou convicto de que posso contribuir significativamente em qualquer equipe com minhas habilidades.
+          </p>
+
+          <p>
+            Atualmente, estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong> (Graduação),
+            possuo formação em <strong>Técnico em Química</strong>. Além disso, possuo certificações em cursos extracurriculares e acumulei 
+            experiência valiosa durante meu estágio na Fatec-PP.
+          </p>
+
+          <p>
+            Estou constantemente me desafiando com novos projetos e participando ativamente de comunidades de programação, 
+            buscando feedback e aprendizado contínuo junto a outros desenvolvedores e desenvolvedoras.
+          </p>
+
+          <p>
+            Meu objetivo é me tornar um profissional altamente competente e relevante na indústria de tecnologia, 
+            contribuindo para soluções inovadoras e impactantes. 🎯
+          </p>
+
+          <div class="botoes">
+            <a target="_blank" href="src/arquivos/AndreySantanaSoares.pdf"
+              class="botao outer-shadow">Veja
+              meu CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades section" id="habilidades">
+    <div class="container">
+      <div class="row">
+        <div class="section-title" data-anime="down">
+          <h2>Habilidades Backend</h2>
+        </div>
+      </div>
+
+      <div class="container-habilidades" data-anime="up">
+        <div class="informacoes javascript">
+          <div class="logo">
+            <i class="devicon devicon-javascript-plain" id="javascript"></i>
+          </div>
+          <h3>JavaScript</h3>
+        </div>
+
+        <div class="informacoes php">
+          <div class="logo">
+            <i class="devicon devicon-php-plain" id="php"></i>
+          </div>
+          <h3>PHP</h3>
+        </div>        
+
+        <div class="informacoes nodejs">
+          <div class="logo">
+            <i class="devicon devicon-mongodb-plain-wordmark" id="mongodb"></i>
+          </div>
+          <h3>MongoDB</h3>
+        </div>        
+
+        <div class="informacoes mysql">
+          <div class="logo">
+            <i class="devicon devicon-mysql-plain" id="mysql"></i>
+          </div>
+          <h3>MySQL Workbench</h3>
+        </div>        
+
+        <div class="informacoes python">
+          <div class="logo">
+            <i class="devicon devicon-python-plain" id="python"></i>
+          </div>
+          <h3>Python</h3>
+        </div>
+
+        <div class="informacoes cplusplus">
+          <div class="logo">
+            <i class="devicon devicon-cplusplus-plain" id="c++"></i>
+          </div>
+          <h3>C++</h3>
+        </div>
+
+        <div class="informacoes csharp">
+          <div class="logo">
+            <i class="devicon devicon-csharp-plain" id="csharp"></i>
+          </div>
+          <h3>C#</h3>
+        </div>        
+
+        <div class="informacoes java">
+          <div class="logo">
+            <i class="devicon devicon-java-plain" id="java"></i>
+          </div>
+          <h3>Java</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="section-title" data-anime="down">
+          <h2>Habilidades Frontend</h2>
+        </div>
+      </div>
+
+      <div class="container-habilidades"  data-anime="up">
+        <div class="informacoes react">
+          <div class="logo">
+            <i class="devicon devicon-react-original" id="react"></i>
+          </div>
+          <h3>ReactJS</h3>
+        </div>
+
+        <div class="informacoes ux-ui">
+          <div class="logo">
+            <!-- Ícone genérico para UX/UI -->
+            <i class="fas fa-user-cog"></i>
+          </div>
+          <h3>Conhecimentos de UX/UI</h3>
+        </div>        
+
+        <div class="informacoes html">
+          <div class="logo">
+            <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+          </div>
+          <h3>HTML5</h3>
+        </div>
+
+        <div class="informacoes css">
+          <div class="logo">
+            <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+          </div>
+          <h3>CSS3</h3>
+        </div>
+
+        <div class="informacoes bootstrap">
+          <div class="logo">
+            <!-- Ícone representando Bootstrap -->
+            <i class="fas fa-compass"></i>
+          </div>
+          <h3>Bootstrap</h3>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="section-title"  data-anime="down">
+          <h2>Outras Habilidades</h2>
+        </div>
+      </div>
+
+      <div class="container-habilidades" data-anime="up">
+        <div class="informacoes github">
+          <div class="logo">
+            <i class="devicon devicon-github-original" id="github"></i>
+          </div>
+          <h3>GitHub</h3>
+        </div>
+
+        <div class="informacoes git">
+          <div class="logo">
+            <i class="devicon devicon-git-plain" id="git"></i>
+          </div>
+          <h3>Git</h3>
+        </div>
+
+        <div class="informacoes figma">
+          <div class="logo">
+            <i class="devicon devicon-figma-plain" id="figma"></i>
+          </div>
+          <h3>Figma</h3>
+        </div>
+
+        <div class="informacoes linux">
+        <div class="logo">
+            <!-- Ícone representando Linux -->
+            <i class="fab fa-linux"></i>
+          </div>
+          <h3>Linux</h3>
+        </div>
+
+        <div class="informacoes android">
+          <div class="logo">
+            <!-- Ícone representando Android -->
+            <i class="fab fa-android"></i>
+          </div>
+          <h3>Android</h3>
+        </div>
+
+        <div class="informacoes iphone">
+          <div class="logo">
+            <!-- Ícone representando iPhone -->
+            <i class="fab fa-apple"></i>
+          </div>
+          <h3>iPhone</h3>
+        </div> 
+
+        <div class="informacoes vscode">
+          <div class="logo">
+            <i class="devicon devicon-vscode-plain" id="vscode"></i>
+          </div>
+          <h3>VSCode</h3>
+        </div>
+
+        <div class="informacoes canva">
+          <div class="logo">
+            <!-- Ícone representando Canva (exemplo de um lápis) -->
+            <i class="fas fa-pencil-alt"></i>
+          </div>
+          <h3>Canva</h3>
+        </div>
+
+      </div>  
+    </div>
+  </section>
+
+  <section class="projetos section" id="projetos" >
+    <div class="container">
+      <div class="row">
+        <div class="section-title" data-anime="down">
+          <h2>Meus projetos</h2>
+        </div>
+      </div>
+
+      <div class="container-projetos" data-anime="up">
+        <div class="projeto">
+          <a href="https://drey021.github.io/mini-portfolio/" target="_blank">
+            <img src="./src/arquivos/projeto-miniportfolio.png" alt="projeto-mini-portfolio" />
+            <h3>Projeto Mini Portfólio 📂</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript </p>
+              <p>Um mini portfólio pessoal que contém informações sobre mim e minhas redes sociais, usando HTML, CSS e JavaScript.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Drey021" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Restaurante/" target="_blank">
+            <img src="./src/arquivos/projeto-restaurante.png" alt="projeto-GreenPalate" />
+            <h3>Rest. GreenPalate 🍽️ </h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript </p>
+              <p>Um projeto sobre Restaurante GreenPalate, desenvolvido com HTML, CSS e JavaScript.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Restaurante?tab=readme-ov-file" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Projeto-One-Piece/" target="_blank">
+            <img src="./src/arquivos/projeto-one_pice.png" alt="profile-search-github" />
+            <h3>Projeto One Piece ⛩️</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Neste projeto e baseado nos personagens da serie one-piece.
+                buscas de usuários do GitHub.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Projeto-One-Piece" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/projeto-GTA-V/" target="_blank">
+            <img src="./src/arquivos/projeto-gtaV.png" alt="projeto spider-verse" />
+            <h3>Projeto GTA V 🎮</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Um projeto de página web dedicada ao videogame Grand Theft Auto V, desenvolvido com HTML, CSS e JavaScript.
+              </p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/projeto-GTA-V?tab=readme-ov-file" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Projeto-guardioes-da-galaxia/" target="_blank">
+            <img src="./src/arquivos/Projeto-guardioes-da-galaxia.png" alt="projeto-guardians-of-the-galaxy" />
+            <h3>Projeto List. Guardiões🌌</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript </p>
+              <p>Uma listagem sobre os personagens dos "Guardiões da Galáxia", feito com HTML, CSS e JavaScript.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Projeto-guardioes-da-galaxia" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Projeto-Clash-Royale/" target="_blank">
+            <img src="./src/arquivos/projeto-clash-royale.png" alt="projeto-clash-royale" />
+            <h3>Projeto Clash Royale 👑</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Uma página web sobre algumas cartas do Clash Royale, criado com HTML, CSS e JavaScript.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Projeto-Clash-Royale" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/projeto-xmen/" target="_blank">
+            <img src="./src/arquivos/projeto-xmen.png" alt="projeto-xmen" />
+            <h3>Projeto Seleç. X-MEN 💥</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript </p>
+              <p>Um projeto sobre seleção de personagens de "X-MEN", feito com HTML, CSS e JavaScript.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/projeto-xmen" target="_blank" class="outer-shadow">🔗 Ver
+              no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://react-fatec-eng.vercel.app/" target="_blank">
+            <img src="./src/arquivos/projeto-react.png" alt="projeto-guardians-of-the-galaxy" />
+            <h3>Projeto React 🧑‍💻</h3>
+            <div class="informacoes-projeto">
+              <p>Java | React | JavaScript </p>
+              <p>Projeto feito na faculade em React na disciplina de Lab de Engenharia de Soft</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/React-Fatec-Eng" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Lab-EngenhariaDeSoft/" target="_blank">
+            <img src="./src/arquivos/projeto-js.png" alt="Projeto argentina-campeon" />
+            <h3>Projeto JS 🧑‍💻</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript </p>
+              <p>Projeto feito na faculade disciplina de Lab de Engenharia de Soft, desenvolvido com HTML, CSS e JavaScript.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Lab-EngenhariaDeSoft" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Listagem_Poke/" target="_blank">
+            <img src="./src/arquivos/projeto-list-pokemons.png" alt="Projeto listagem-pokemons" />
+            <h3>Projeto List. Pokémons ⭕ </h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Um projeto sobre uma listagem de Pokémons, feito com HTML, CSS e JavaScript</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Listagem_Poke" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/The-Last-of-us/" target="_blank">
+            <img src="./src/arquivos/projeto-tlou.png" alt="projeto-xmen" />
+            <h3>Projeto The Last Of US 🧟</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript </p>
+              <p>Um projeto sobre seleção da serie The Last Of Us, feito com HTML, CSS e JavaScript.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/The-Last-of-us?tab=readme-ov-file" target="_blank" class="outer-shadow">🔗 Ver
+              no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Projeto-Mario/" target="_blank">
+            <img src="./src/arquivos/projeto-mario1.png" alt="Projeto Mario Bros" />
+            <h3>Projeto Super Mario 🍄 </h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Landing Page do trailer do filme Super Mario Bros, feito com o básico da programação frontend.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Projeto-Mario?tab=readme-ov-file" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Marvel/" target="_blank">
+            <img src="./src/arquivos/projeto-marvel.png" alt="projeto-clash-royale" />
+            <h3>Projeto X1 Marvel 🕹️</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Uma página web sobre uma interface da marvel X1, criado com HTML, CSS e JavaScript.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Marvel" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Game-Sp-mario/" target="_blank">
+            <img src="./src/arquivos/projeto-mario-jg.png" alt="projeto-mario-jump" />
+            <h3>Projeto "Mario Jump!" 🕹️</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript </p>
+              <p>Um jogo de corrida infinita do Super Mario, inspirado no famoso Chrome Dino, criado com HTML, CSS e
+                JavaScript</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Game-Sp-mario?tab=readme-ov-file" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/pokecards/" target="_blank">
+            <img src="./src/arquivos/projeto-pokecards.png" alt="Projeto TLOU" />
+            <h3>Projeto Pokecards 📱</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Pagina de cards de alguns pokeons, feito com o básico da programação frontend.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/pokecards" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Pokedex-simples/" target="_blank">
+            <img src="./src/arquivos/projeto-pokedexSimp.png" alt="Projeto TLOU" />
+            <h3>Projeto Pokedex 📱</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Pokedex simples de alguns pokemons, feito com o básico da programação frontend.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Pokedex-simples" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Luta-X1/" target="_blank">
+            <img src="./src/arquivos/projeto-lutaX1.png" alt="Projeto TLOU" />
+            <h3>Projeto Luta X1 🎫</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Projeto de Luta X1 apenas para praticar, feito com o básico da programação frontend.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Luta-X1" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Pokedex-completa/" target="_blank">
+            <img src="./src/arquivos/projeto-pokedexCompl.png" alt="Projeto TLOU" />
+            <h3>Projeto Luta X1 📱</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Projeto de pokedex completa, feito com o básico da programação frontend.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Pokedex-completa" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <a href="https://drey021.github.io/Jogo-da-velha/" target="_blank">
+            <img src="./src/arquivos/projeto-jogodavelha.png" alt="Projeto TLOU" />
+            <h3>Projeto Jogo da Velha #️⃣</h3>
+            <div class="informacoes-projeto">
+              <p>HTML | CSS | JavaScript</p>
+              <p>Projeto de jogo da velha, feito com o básico da programação frontend.</p>
+            </div>
+          </a>
+          <div class="github-pages">
+            <a href="https://github.com/Drey021/Jogo-da-velha" target="_blank"
+              class="outer-shadow">🔗 Ver no GitHub Pages</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <h2>Me envie uma mensagem!</h2>
+      <div class="redes-sociais">
+        <a href="https://www.linkedin.com/in/andreyssoares/" target="_blank" class="outer-shadow"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5518996260227" target="_blank" class="outer-shadow"><i
+            class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/drey021" target="_blank" class="outer-shadow"><i
+            class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/drey_soares_/" target="_blank" class="outer-shadow"><i
+            class="fab fa-instagram"></i></a>
+      </div>
+      <br>
+      <div class="endereco-email">
+        <p>Email:</p>
+        <a href="aandrey.saores@gmail.com" target="_blank">aandrey.saores@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+  <script src="src/js/index.js"></script>
+</body>
+</html>
